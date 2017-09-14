@@ -1,0 +1,37 @@
+/*Base Styling*/
+html,
+body {
+	height: 100%;
+	margin: 0;
+	width: 100%;
+}
+
+/*Nav Sidebar*/
+nav {
+	background-color: black;
+	height: 100%;
+	width: 15%;
+}
+
+/*Search Section*/
+.search {
+	background-color: aliceblue;
+}
+
+
+/*Title Header Section*/
+.title-header {
+	background-color: purple;
+}
+
+/*Graphs Section*/
+.graphs {
+	background-color: blue;
+}
+
+/*Main Section*/
+.main {
+	background-color: yellow;
+
+}
+
