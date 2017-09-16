@@ -1,6 +1,8 @@
 /*Base Styling*/
 html,
 body {
+	font-family: sans-serif;
+	font-size: 16px;
 	height: 100%;
 	margin: 0;
 	width: 100%;
@@ -14,6 +16,7 @@ ul {
 nav {
 	background-color: #354052;
 	color: #A4AFC1;
+	font-size: 0.9em;
 	height: 100%;
 	position: fixed;
 	top: 0;
@@ -21,9 +24,57 @@ nav {
 	width: 15%;
 }
 
+nav > section {
+	padding: 10px;
+	border-bottom: 2px solid black;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li,
+h4,
+p {
+	margin: 10px 0;
+}
+
+img {
+	margin-top: 10px;
+}
+
 .fa {
-	/*margin-right: 5px;*/
-	width: 23px;
+	width: 25px;
+}
+
+.nav-top {
+	text-align: center;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	width: 60px;
+}
+
+.nav-categories {
+	border: none;
+}
+
+.yellow {
+	color: #F7D707;
+}
+
+.blue {
+	color: #29AFFA;
+}
+
+.red {
+	color: #EA1B61;
+}
+
+.green {
+	color: #00A987;
 }
 
 /*RIGHT*/
@@ -56,14 +107,25 @@ nav {
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 	nav {
-		height: 60px;
+		height: 55px;
 		width: 100%;
 	}
 
+	.nav-main, 
+	.nav-admin, 
+	.nav-categories {
+		display: inline-block;
+	}
+
+	ul,
+	.profile-pic {
+		display: none;
+	}
+
 	.main-container {
-		top: 60px;
+		top: 55px;
 		width: 100%;
 	}
 }
