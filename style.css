@@ -1,6 +1,8 @@
 /*Base Styling*/
 html,
 body {
+	 box-sizing:border-box;
+    -moz-box-sizing:border-box;
 	font-family: sans-serif;
 	font-size: 16px;
 	height: 100%;
@@ -21,7 +23,7 @@ nav {
 	height: 100%;
 }
 
-.fa-bars {
+.menu {
 	display: none !important;
 	/*visibility: hidden;*/
 }
@@ -89,7 +91,23 @@ img {
 
 /*Search Section*/
 .search {
-	background-color: aliceblue;
+	display: flex;
+	justify-content: space-between;
+}
+
+.input-container {
+
+}
+
+input {
+	padding: 10px;
+	width: 750px;
+}
+
+.search button,
+.right-buttons button {
+	margin: 0;
+	padding: 10px;
 }
 
 
@@ -151,14 +169,14 @@ img {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
 	.nav-main, 
 	.nav-admin, 
 	.nav-categories {
 		display: none;
 	}
 	
-	.fa-bars {
+	.menu {
 		display: inline-flex !important;
 		padding: 13px;
 	}
