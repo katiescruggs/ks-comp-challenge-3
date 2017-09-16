@@ -16,15 +16,20 @@ ul {
 nav {
 	background-color: #354052;
 	color: #A4AFC1;
+	float: left;
 	font-size: 0.9em;
 	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 15%;
 }
 
-nav > section {
+.fa-bars {
+	display: none !important;
+	/*visibility: hidden;*/
+}
+
+.nav-top,
+.nav-main,
+.nav-admin,
+.nav-categories {
 	padding: 10px;
 	border-bottom: 2px solid black;
 }
@@ -79,9 +84,7 @@ img {
 
 /*RIGHT*/
 .main-container {
-	position: absolute;
-	right: 0;
-	width: 85%;
+
 }
 
 /*Search Section*/
@@ -107,20 +110,37 @@ img {
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
 	nav {
+		display: flex;
+		justify-content:space-between;
 		height: 55px;
 		width: 100%;
+	}
+
+	.nav-top {
+		display: flex;
+	}
+
+	.profile-pic {
+		margin: 0;
+		width: 30px;
+	}
+
+	p {
+		display: inline-flex;
+		margin-left: 10px;
+
 	}
 
 	.nav-main, 
 	.nav-admin, 
 	.nav-categories {
-		display: inline-block;
+		border: none;
+		display: inline-flex;
 	}
 
-	ul,
-	.profile-pic {
+	ul {
 		display: none;
 	}
 
@@ -130,6 +150,20 @@ img {
 	}
 }
 
+
+@media screen and (max-width: 600px) {
+	.nav-main, 
+	.nav-admin, 
+	.nav-categories {
+		display: none;
+	}
+	
+	.fa-bars {
+		display: inline-flex !important;
+		padding: 13px;
+	}
+
+}
 
 
 
