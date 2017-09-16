@@ -6,11 +6,21 @@ body {
 	width: 100%;
 }
 
-/*Nav Sidebar*/
+/*Nav Sidebar (LEFT)*/
 nav {
-	background-color: black;
+	background-color: gray;
 	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 15%;
+}
+
+/*RIGHT*/
+.main-container {
+	position: absolute;
+	right: 0;
+	width: 85%;
 }
 
 /*Search Section*/
@@ -34,4 +44,18 @@ nav {
 	background-color: yellow;
 
 }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 600px) {
+	nav {
+		background-color: magenta;
+	}
+}
+
+
+
+
+
+
+
 
