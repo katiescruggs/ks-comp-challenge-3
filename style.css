@@ -6,6 +6,10 @@ body {
 	width: 100%;
 }
 
+ul {
+	list-style-type: none;
+}
+
 /*Nav Sidebar (LEFT)*/
 nav {
 	background-color: gray;
