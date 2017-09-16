@@ -46,9 +46,15 @@ nav {
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	nav {
-		background-color: magenta;
+		height: 60px;
+		width: 100%;
+	}
+
+	.main-container {
+		top: 60px;
+		width: 100%;
 	}
 }
 
