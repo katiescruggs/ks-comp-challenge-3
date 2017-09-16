@@ -1,0 +1,67 @@
+/*Base Styling*/
+html,
+body {
+	height: 100%;
+	margin: 0;
+	width: 100%;
+}
+
+/*Nav Sidebar (LEFT)*/
+nav {
+	background-color: gray;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 15%;
+}
+
+/*RIGHT*/
+.main-container {
+	position: absolute;
+	right: 0;
+	width: 85%;
+}
+
+/*Search Section*/
+.search {
+	background-color: aliceblue;
+}
+
+
+/*Title Header Section*/
+.title-header {
+	background-color: purple;
+}
+
+/*Graphs Section*/
+.graphs {
+	background-color: blue;
+}
+
+/*Main Section*/
+.main {
+	background-color: yellow;
+
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 800px) {
+	nav {
+		height: 60px;
+		width: 100%;
+	}
+
+	.main-container {
+		top: 60px;
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
