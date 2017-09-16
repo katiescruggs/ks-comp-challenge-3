@@ -12,12 +12,18 @@ ul {
 
 /*Nav Sidebar (LEFT)*/
 nav {
-	background-color: gray;
+	background-color: #354052;
+	color: #A4AFC1;
 	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 15%;
+}
+
+.fa {
+	/*margin-right: 5px;*/
+	width: 23px;
 }
 
 /*RIGHT*/
