@@ -14,8 +14,11 @@ ul {
 	list-style-type: none;
 }
 
-.oval-btns {
-	border-radius: 40px;
+.oval {
+	border-outline: none;
+	border-radius: 20em;
+	background-color: white;
+	padding: 10px;
 }
 
 /*Nav Sidebar (LEFT)*/
@@ -24,7 +27,7 @@ nav {
 	color: #A4AFC1;
 	/*float: left;*/
 	height: 100%;
-	width: 160px;
+	width: 162px;
 
 	position: fixed;
 	top: 0;
@@ -55,10 +58,6 @@ p {
 	margin: 10px 0;
 }
 
-.profile-pic {
-	margin-top: 10px;
-}
-
 nav .fa {
 	width: 25px;
 }
@@ -68,6 +67,7 @@ nav .fa {
 }
 
 .profile-pic {
+	margin-top: 10px;
 	border-radius: 50%;
 	width: 60px;
 }
@@ -96,7 +96,7 @@ nav .fa {
 .main-container {
 	position: absolute;
 	top: 0;
-	left: 160px;
+	left: 162px;
 	right: 0;
 }
 
@@ -104,6 +104,7 @@ nav .fa {
 .search {
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 2px solid black;
 }
 
 .input-container {
@@ -124,12 +125,40 @@ input {
 
 /*Title Header Section*/
 .title-header {
-	margin: 20px;
+	padding: 25px 25px 10px 25px;
+	border-bottom: 2px solid black;
 }
 
 .title-container {
 	display: flex;
 	justify-content: space-between;
+}
+
+.title-div {
+	margin: 20px;
+}
+
+h1 {
+	font-size: 1.75em;
+	margin: 0 0 10px 0;
+}
+
+.location {
+	margin: 0;
+}
+
+.fa-circle {
+	color: green;
+}
+
+.header-btns {
+	align-self: center;
+	border-radius: 10px;
+	border-collapse: separate;
+}
+
+.header-btns button {
+	margin: 5px;
 }
 
 a {
