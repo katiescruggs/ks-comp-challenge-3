@@ -176,12 +176,23 @@ a {
 
 /*Graphs Section*/
 .graphs {
-	background-color: blue;
+	background-color: #EDF2F6;
+	border-bottom: 2px solid black;
+	display: flex;
+	padding: 40px;
+}
+
+.graph-img {
+	width: 470px;
+}
+
+.graph-btn {
+	margin-left: 150px;
 }
 
 /*Main Section*/
 .main-section {
-	background-color: yellow;
+	background-color: #EDF2F6;
 
 }
 
@@ -222,6 +233,7 @@ a {
 
 	.main-container {
 		top: 55px;
+		left: 0;
 		width: 100%;
 	}
 }
