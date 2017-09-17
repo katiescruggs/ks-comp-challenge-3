@@ -102,13 +102,7 @@ nav .fa {
 
 /*Search Section*/
 .search {
-	/*display: flex;
-	justify-content: space-between;*/
 	border-bottom: 2px solid black;
-}
-
-.input-container {
-
 }
 
 input {
@@ -128,6 +122,10 @@ input {
 	margin: 0;
 	padding: 10px;
 	width: 50px;
+}
+
+.right-buttons button {
+	float: right;
 }
 
 .right-buttons {
