@@ -102,24 +102,37 @@ nav .fa {
 
 /*Search Section*/
 .search {
-	display: flex;
-	justify-content: space-between;
 	border-bottom: 2px solid black;
 }
 
-.input-container {
-
-}
-
 input {
+	font-family: fontawesome;
+	height: 30px;
 	padding: 10px;
-	width: 750px;
+	position: absolute;
+	top: 0;
+	left: 50px;
+	right: 200px;
+	width: 700px;
+	border: none;
 }
 
 .search button,
 .right-buttons button {
+	height: 50px;
 	margin: 0;
 	padding: 10px;
+	width: 50px;
+}
+
+.right-buttons button {
+	float: right;
+}
+
+.right-buttons {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 
@@ -155,6 +168,7 @@ h1 {
 	align-self: center;
 	border-radius: 10px;
 	border-collapse: separate;
+	margin-left: 15px;
 }
 
 .header-btns button {
@@ -165,9 +179,15 @@ a {
 	color: #29AFFA;
 }
 
-.header-nav-list li{
+.header-li {	
 	display: inline-block;
 	margin: 10px 20px;
+}
+
+.more-li {
+	display: none;
+	margin: 10px 20px;
+
 }
 
 .dash {
@@ -176,17 +196,53 @@ a {
 
 /*Graphs Section*/
 .graphs {
-	background-color: blue;
+	align-content: center;
+	justify-content: center;
+	background-color: #EDF2F6;
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 40px;
+}
+
+.graph-img {
+	width: 400px;
+}
+
+.graph-btn {
+	display: block;
+	margin-left: 150px;
 }
 
 /*Main Section*/
 .main-section {
-	background-color: yellow;
+	background-color: #EDF2F6;
 
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
+	.title-container {
+		flex-wrap: wrap;
+	}
+
+	.more-li {
+		display: inline-block;
+		font-weight: bold;
+	}
+
+	.broadcast,
+	.notifications,
+	.activity,
+	.interviews {
+		display: none;
+	}
+
+}
+
+
+
+@media screen and (max-width: 700px) {
 	nav {
 		display: flex;
 		justify-content:space-between;
@@ -222,10 +278,15 @@ a {
 
 	.main-container {
 		top: 55px;
+		left: 0;
 		width: 100%;
 	}
 }
 
+
+.graphs {
+	/*	flex-wrap: wrap;*/
+	}
 
 @media screen and (max-width: 400px) {
 	.nav-main, 
