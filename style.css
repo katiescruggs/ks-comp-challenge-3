@@ -106,7 +106,8 @@ nav .fa {
 }
 
 input {
-	height: 26px;
+	font-family: fontawesome;
+	height: 30px;
 	padding: 10px;
 	position: absolute;
 	top: 0;
@@ -187,7 +188,7 @@ a {
 .more-li {
 	display: none;
 	margin: 10px 20px;
-	
+
 }
 
 .dash {
