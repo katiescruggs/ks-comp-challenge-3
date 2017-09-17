@@ -113,7 +113,7 @@ input {
 	top: 0;
 	left: 50px;
 	right: 200px;
-	width: 1000px;
+	width: 700px;
 	border: none;
 }
 
@@ -168,6 +168,7 @@ h1 {
 	align-self: center;
 	border-radius: 10px;
 	border-collapse: separate;
+	margin-left: 15px;
 }
 
 .header-btns button {
@@ -177,8 +178,6 @@ h1 {
 a {
 	color: #29AFFA;
 }
-
-/*.header-nav-list li{*/
 
 .header-li {	
 	display: inline-block;
@@ -197,17 +196,21 @@ a {
 
 /*Graphs Section*/
 .graphs {
+	align-content: center;
+	justify-content: center;
 	background-color: #EDF2F6;
 	border-bottom: 2px solid black;
 	display: flex;
+	flex-wrap: wrap;
 	padding: 40px;
 }
 
 .graph-img {
-	width: 470px;
+	width: 400px;
 }
 
 .graph-btn {
+	display: block;
 	margin-left: 150px;
 }
 
@@ -225,13 +228,15 @@ a {
 
 	.more-li {
 		display: inline-block;
+		font-weight: bold;
 	}
 
 	.broadcast,
-	.notifications {
+	.notifications,
+	.activity,
+	.interviews {
 		display: none;
 	}
-
 
 }
 
@@ -278,6 +283,10 @@ a {
 	}
 }
 
+
+.graphs {
+	/*	flex-wrap: wrap;*/
+	}
 
 @media screen and (max-width: 400px) {
 	.nav-main, 
