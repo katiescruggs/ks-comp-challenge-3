@@ -4,7 +4,7 @@ body {
 	 box-sizing:border-box;
     -moz-box-sizing:border-box;
 	font-family: sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	height: 100%;
 	margin: 0;
 	width: 100%;
@@ -14,13 +14,24 @@ ul {
 	list-style-type: none;
 }
 
+.oval {
+	border-outline: none;
+	border-radius: 20em;
+	background-color: white;
+	padding: 10px;
+}
+
 /*Nav Sidebar (LEFT)*/
 nav {
 	background-color: #354052;
 	color: #A4AFC1;
-	float: left;
-	font-size: 0.9em;
+	/*float: left;*/
 	height: 100%;
+	width: 162px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 .menu {
@@ -47,11 +58,7 @@ p {
 	margin: 10px 0;
 }
 
-img {
-	margin-top: 10px;
-}
-
-.fa {
+nav .fa {
 	width: 25px;
 }
 
@@ -60,6 +67,7 @@ img {
 }
 
 .profile-pic {
+	margin-top: 10px;
 	border-radius: 50%;
 	width: 60px;
 }
@@ -86,13 +94,17 @@ img {
 
 /*RIGHT*/
 .main-container {
-
+	position: absolute;
+	top: 0;
+	left: 162px;
+	right: 0;
 }
 
 /*Search Section*/
 .search {
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 2px solid black;
 }
 
 .input-container {
@@ -113,7 +125,53 @@ input {
 
 /*Title Header Section*/
 .title-header {
-	background-color: purple;
+	padding: 25px 25px 10px 25px;
+	border-bottom: 2px solid black;
+}
+
+.title-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title-div {
+	margin: 20px;
+}
+
+h1 {
+	font-size: 1.75em;
+	margin: 0 0 10px 0;
+}
+
+.location {
+	margin: 0;
+}
+
+.fa-circle {
+	color: green;
+}
+
+.header-btns {
+	align-self: center;
+	border-radius: 10px;
+	border-collapse: separate;
+}
+
+.header-btns button {
+	margin: 5px;
+}
+
+a {
+	color: #29AFFA;
+}
+
+.header-nav-list li{
+	display: inline-block;
+	margin: 10px 20px;
+}
+
+.dash {
+	margin: 0 5px;
 }
 
 /*Graphs Section*/
@@ -122,7 +180,7 @@ input {
 }
 
 /*Main Section*/
-.main {
+.main-section {
 	background-color: yellow;
 
 }
