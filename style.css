@@ -1,6 +1,7 @@
 /*Base Styling*/
 html,
 body {
+	background-color: #EDF2F6;
 	 box-sizing:border-box;
     -moz-box-sizing:border-box;
 	font-family: sans-serif;
@@ -26,10 +27,10 @@ nav {
 	background-color: #354052;
 	color: #A4AFC1;
 	/*float: left;*/
-	height: 100%;
+	height: 200%;
 	width: 162px;
 
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 }
@@ -102,6 +103,7 @@ nav .fa {
 
 /*Search Section*/
 .search {
+	background-color: white;
 	border-bottom: 1px solid gray;
 }
 
@@ -146,6 +148,7 @@ input {
 
 /*Title Header Section*/
 .title-header {
+	background-color: white;
 	padding: 25px 25px 10px 25px;
 	border-bottom: 2px solid black;
 }
@@ -211,6 +214,8 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 40px;
+
+	/*margin: 20px;*/
 }
 
 .graph-img {
@@ -224,7 +229,10 @@ a {
 
 /*Main Section*/
 .main-section {
+	justify-content: center;
 	background-color: #EDF2F6;
+	display: flex;
+	flex-wrap: wrap;
 
 }
 
@@ -233,29 +241,87 @@ a {
 }
 
 table {
+	background-color: white;
 	border-collapse: collapse;
-}
-
-td{
-	
+	margin: 45px;
+	width: 600px;
 }
 
 th {
 	background-color: #6F7E95;
+	color: white;
+	padding: 15px 30px;
 }
 
-/*td > h3,
-td >p {
-	color: magenta;
-	display: inline;
-	/*border-bottom: 2px solid black;*/
-/*}*/
+th > p {
+	text-align: left;
+}
+
+.job-description {
+	width: 170px;
+	text-align: left;
+}
+
+.edit {
+	background-color: #7F8BA6;
+	border: none;
+	color: white;
+	padding: 10px;
+}
 
 td {
-	width: 800px;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid gray;
+	padding: 25px;
 
 }
+
+aside {
+	margin: 45px 45px 0 0;
+	width: 400px;
+}
+
+.aside-btn {
+	border: none;
+	color: white;
+	margin: 0 0 15px 0;
+	width: 100%;
+	height: 50px;
+
+	position: relative;
+}
+
+.aside-btn > i {
+	position: absolute;
+	left: 30px;	
+}
+
+.facebook {
+	background-color: #4C72C3;
+	flex-direction: center;
+}
+
+.twitter {
+	background-color: #00A8EF;
+}
+
+.linkedin {
+	background-color: #027EB9;
+}
+
+h2 {
+	margin: 30px 0 20px 0;
+}
+
+h2 .fa {
+	margin-right: 10px;
+}
+
+.link-job,
+.button-widget {
+	border-bottom: 1px solid gray;
+	padding-bottom: 30px;
+}
+
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1100px) {
@@ -276,8 +342,6 @@ td {
 	}
 
 }
-
-
 
 @media screen and (max-width: 700px) {
 	nav {
@@ -319,11 +383,6 @@ td {
 		width: 100%;
 	}
 }
-
-
-.graphs {
-	/*	flex-wrap: wrap;*/
-	}
 
 @media screen and (max-width: 400px) {
 	.nav-main, 
