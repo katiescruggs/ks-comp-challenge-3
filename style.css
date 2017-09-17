@@ -102,7 +102,7 @@ nav .fa {
 
 /*Search Section*/
 .search {
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid gray;
 }
 
 input {
@@ -119,14 +119,22 @@ input {
 
 .search button,
 .right-buttons button {
+	background-color: white;
+	border: none;
 	height: 50px;
 	margin: 0;
 	padding: 10px;
 	width: 50px;
 }
 
+.search .left-search {
+	/*border: none;*/
+	border-right: 1px solid gray;
+}
+
 .right-buttons button {
 	float: right;
+	border-left: 1px solid gray;
 }
 
 .right-buttons {
@@ -217,6 +225,35 @@ a {
 /*Main Section*/
 .main-section {
 	background-color: #EDF2F6;
+
+}
+
+.inline-p {
+	display: inline-block;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td{
+	
+}
+
+th {
+	background-color: #6F7E95;
+}
+
+/*td > h3,
+td >p {
+	color: magenta;
+	display: inline;
+	/*border-bottom: 2px solid black;*/
+/*}*/
+
+td {
+	width: 800px;
+	border-bottom: 2px solid black;
 
 }
 
