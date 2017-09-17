@@ -102,8 +102,8 @@ nav .fa {
 
 /*Search Section*/
 .search {
-	display: flex;
-	justify-content: space-between;
+	/*display: flex;
+	justify-content: space-between;*/
 	border-bottom: 2px solid black;
 }
 
@@ -112,14 +112,28 @@ nav .fa {
 }
 
 input {
+	height: 26px;
 	padding: 10px;
-	width: 750px;
+	position: absolute;
+	top: 0;
+	left: 50px;
+	right: 200px;
+	width: 1000px;
+	border: none;
 }
 
 .search button,
 .right-buttons button {
+	height: 50px;
 	margin: 0;
 	padding: 10px;
+	width: 50px;
+}
+
+.right-buttons {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 
