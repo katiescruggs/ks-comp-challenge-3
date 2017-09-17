@@ -177,9 +177,17 @@ a {
 	color: #29AFFA;
 }
 
-.header-nav-list li{
+/*.header-nav-list li{*/
+
+.header-li {	
 	display: inline-block;
 	margin: 10px 20px;
+}
+
+.more-li {
+	display: none;
+	margin: 10px 20px;
+	
 }
 
 .dash {
@@ -209,7 +217,26 @@ a {
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
+	.title-container {
+		flex-wrap: wrap;
+	}
+
+	.more-li {
+		display: inline-block;
+	}
+
+	.broadcast,
+	.notifications {
+		display: none;
+	}
+
+
+}
+
+
+
+@media screen and (max-width: 700px) {
 	nav {
 		display: flex;
 		justify-content:space-between;
