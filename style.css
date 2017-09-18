@@ -354,6 +354,13 @@ h2 .fa {
 	padding-bottom: 18px;
 }
 
+.link-job,
+.button-widget,
+.upload-resumes {
+	height: 125px;
+	position: relative;
+}
+
 .copy-p {
 	margin: 10px 0;
 }
@@ -363,15 +370,24 @@ h2 .fa {
 	display: inline-block;
 	padding: 15px;
 	margin: 10px 0;
+
+	position: absolute;
+	left: 0;
+	right: 70px;
+	bottom: 10px;
 }
 
 .copy-btn {
-	background-color: magenta;
+	background-color: #47BBBC;
 	border: none;
 	color: white;
-	height: 50px;
+	height: 44px;
 	margin-right: 0;
 	width: 70px;
+
+	position: absolute;
+	right: 0;
+	bottom: 20px;
 }
 
 .email-text {
