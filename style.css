@@ -147,16 +147,14 @@ input {
 }
 
 .right-buttons button {
-	float: right;
 	border-left: 2px solid #E5E6E8;
+	position: relative;
 }
 
 .right-buttons {
-	position: absolute;
-	top: 0;
-	right: 0;
-}
+	float: right;
 
+}
 
 /*Title Header Section*/
 .title-header {
@@ -487,6 +485,54 @@ h2 .fa {
 
 	input {
 		width: 400px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.nav-main, 
+	.nav-admin, 
+	.nav-categories {
+		display: none;
+	}
+	
+	.menu {
+		display: inline-flex !important;
+		padding: 13px;
+	}
+
+	table, aside {
+		width: 400px;
+	}
+
+	input {
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 96.5%;
+		border-top: 2px solid #E5E6E8;
+	}
+
+	.search {
+		align-content: center;
+		display: flex;
+		height: 162px;
+	}
+
+	.search .left-search {
+		position: static;
+		border: none;
+		border-left: 2px solid #E5E6E8;
+	}
+
+	.right-buttons{
+		float: none;
+		border-right: 2px solid #E5E6E8;
+	}
+
+	.top-line-search {
+		justify-content: center;
+		display: flex;
+		margin: 0 auto;
 	}
 }
 
