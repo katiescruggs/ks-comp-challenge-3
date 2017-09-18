@@ -172,27 +172,40 @@ input {
 }
 
 h1 {
-	font-size: 1.75em;
+	font-weight: normal;
 	margin: 0 0 10px 0;
 }
 
 .location {
-	margin: 0;
+	font-size: 0.9rem;
+	margin: 0 0 10px 0;
 }
 
 .fa-circle {
 	color: green;
 }
 
+.header-nav-list li {
+	font-size: 0.9rem;
+}
+
 .header-btns {
 	align-self: center;
 	border-radius: 10px;
 	border-collapse: separate;
+	font-size: 0.9rem;
 	margin-left: 15px;
 }
 
 .header-btns button {
 	margin: 5px;
+	height: 45px;
+	width: 45px;
+	border: 1px solid gray;
+}
+
+.open {
+	width: 120px !important;
 }
 
 a {
