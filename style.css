@@ -174,7 +174,7 @@ input {
 }
 
 .title-div {
-	margin: 20px;
+	margin: 20px 0 10px 20px;
 }
 
 h1 {
@@ -183,12 +183,15 @@ h1 {
 }
 
 .location {
-	/*font-size: 0.9rem;*/
 	margin: 0 0 10px 0;
 }
 
 .fa-circle {
 	color: green;
+}
+
+.header-nav-list {
+	margin-top: 10px;
 }
 
 .header-nav-list li {
@@ -425,18 +428,21 @@ h2 .fa {
 		display: none;
 	}
 
+	table {
+		width: 600px;
+	}
+
 	aside {
 		margin: 10px 45px;
-		width: 650px;
+		width: 600px;
 	}
 
 	.email-text {
 		width: 97%;
+	}
 }
 
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
 	nav {
 		display: flex;
 		justify-content:space-between;
