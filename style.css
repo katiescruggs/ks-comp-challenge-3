@@ -36,7 +36,6 @@ nav {
 
 .menu {
 	display: none !important;
-	/*visibility: hidden;*/
 }
 
 .nav-top,
@@ -442,11 +441,11 @@ h2 .fa {
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 985px) {
 	nav {
 		display: flex;
 		justify-content:space-between;
-		height: 55px;
+		height: 80px;
 		width: 100%;
 	}
 
@@ -455,14 +454,14 @@ h2 .fa {
 	}
 
 	.profile-pic {
-		margin: 0;
-		width: 30px;
+		margin: 8.5px 0;
+		width: 40px;
+		height: 40px;
 	}
 
-	p {
+	.profile-name {
 		display: inline-flex;
-		margin-left: 10px;
-
+		margin: 22.5px 15px;
 	}
 
 	.nav-main, 
@@ -472,14 +471,22 @@ h2 .fa {
 		display: inline-flex;
 	}
 
-	ul {
+	.nav-ul {
 		display: none;
 	}
 
 	.main-container {
-		top: 55px;
+		top: 80px;
 		left: 0;
 		width: 100%;
+	}
+
+	table, aside {
+		width: 550px;
+	}
+
+	input {
+		width: 400px;
 	}
 }
 
