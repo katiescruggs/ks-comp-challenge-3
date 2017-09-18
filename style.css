@@ -305,18 +305,16 @@ td {
 }
 
 aside {
-	font-size: 0.9rem;
 	margin: 60px 45px 0 0;
-	width: 285px;
+	width: 300px;
 }
 
 .aside-btn {
 	border: none;
 	color: white;
-	margin: 0 0 15px 0;
+	margin: 0 0 20px 0;
 	width: 100%;
 	height: 50px;
-
 	position: relative;
 }
 
@@ -336,12 +334,13 @@ aside {
 
 .linkedin {
 	background-color: #027EB9;
+	margin-bottom: 12px;
 }
 
 h2 {
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	font-weight: normal;
-	margin: 20px 0 10px 0;
+	margin: 30px 0 5px 0;
 }
 
 h2 .fa {
@@ -357,7 +356,7 @@ h2 .fa {
 .link-job,
 .button-widget,
 .upload-resumes {
-	height: 125px;
+	height: 150px;
 	position: relative;
 }
 
@@ -374,7 +373,7 @@ h2 .fa {
 	position: absolute;
 	left: 0;
 	right: 70px;
-	bottom: 10px;
+	bottom: 20px;
 }
 
 .copy-btn {
@@ -387,7 +386,7 @@ h2 .fa {
 
 	position: absolute;
 	right: 0;
-	bottom: 20px;
+	bottom: 30px;
 }
 
 .email-text {
