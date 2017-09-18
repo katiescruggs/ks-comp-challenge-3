@@ -44,7 +44,7 @@ nav {
 .nav-admin,
 .nav-categories {
 	padding: 10px 20px;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid #28303E;
 }
 
 ul {
@@ -109,11 +109,13 @@ nav .fa {
 /*Search Section*/
 .search {
 	background-color: white;
-	border-bottom: 1px solid gray;
+	border-bottom: 2px solid #E5E6E8;
 }
 
 input {
-	font-family: fontawesome;
+	color: #53565A;
+	font-family: sans-serif;
+	font-size: 1.3rem;
 	height: 60px;
 	padding: 10px;
 	position: absolute;
@@ -125,9 +127,9 @@ input {
 }
 
 ::placeholder {
-	font-family: sans-serif;
-	font-family: FontAwesome;
-	font-size: 1.5rem;
+	color: #848990;
+	font-family: FontAwesome, sans-serif;
+	font-size: 1.2rem;
 }
 
 .search button,
@@ -138,15 +140,16 @@ input {
 	margin: 0;
 	padding: 10px;
 	width: 80px;
+	color: #848990;
 }
 
 .search .left-search {
-	border-right: 1px solid gray;
+	border-right: 2px solid #E5E6E8;
 }
 
 .right-buttons button {
 	float: right;
-	border-left: 1px solid gray;
+	border-left: 2px solid #E5E6E8;
 }
 
 .right-buttons {
@@ -160,7 +163,9 @@ input {
 .title-header {
 	background-color: white;
 	padding: 25px 25px 10px 25px;
-	border-bottom: 1px solid gray;
+	border-bottom: 2px solid #CBCED1;
+
+	color: #53565A;
 }
 
 .title-container {
@@ -202,7 +207,9 @@ h1 {
 	margin: 5px;
 	height: 45px;
 	width: 45px;
-	border: 1px solid gray;
+	border: 2px solid #CBCED1;
+
+	color: #53565A;
 }
 
 .open {
@@ -233,7 +240,7 @@ a {
 	align-content: center;
 	justify-content: center;
 	background-color: #EDF2F6;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid #CBCED1;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 40px;
@@ -244,7 +251,8 @@ a {
 }
 
 .graph-btn {
-	border: 1px solid gray;
+	border: 2px solid #CBCED1;
+	color: #53565A;
 	display: block;
 	font-size: 0.9rem;
 	margin: 15px 0 10px 150px;
@@ -266,6 +274,7 @@ a {
 table {
 	background-color: white;
 	border-collapse: collapse;
+	color: #53565A;
 	font-size: 1.1rem;
 	margin: 60px 45px;
 	width: 685px;
@@ -299,7 +308,7 @@ td:first-child {
 }
 
 td {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #CBCED1;
 	padding: 27.5px;
 
 }
@@ -349,13 +358,14 @@ h2 .fa {
 
 .link-job,
 .button-widget {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #CBCED1;
 	padding-bottom: 18px;
 }
 
 .link-job,
 .button-widget,
 .upload-resumes {
+	color: #53565A;
 	height: 150px;
 	position: relative;
 }
