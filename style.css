@@ -43,7 +43,7 @@ nav {
 .nav-main,
 .nav-admin,
 .nav-categories {
-	padding: 10px;
+	padding: 10px 20px;
 	border-bottom: 2px solid black;
 }
 
@@ -63,7 +63,7 @@ p {
 }
 
 nav .fa {
-	width: 25px;
+	width: 35px;
 }
 
 .nav-top {
@@ -113,28 +113,33 @@ nav .fa {
 
 input {
 	font-family: fontawesome;
-	height: 30px;
+	height: 60px;
 	padding: 10px;
 	position: absolute;
 	top: 0;
-	left: 50px;
+	left: 80px;
 	right: 200px;
 	width: 700px;
 	border: none;
+}
+
+::placeholder {
+	font-family: sans-serif;
+	font-family: FontAwesome;
+	font-size: 1.5rem;
 }
 
 .search button,
 .right-buttons button {
 	background-color: white;
 	border: none;
-	height: 50px;
+	height: 80px;
 	margin: 0;
 	padding: 10px;
-	width: 50px;
+	width: 80px;
 }
 
 .search .left-search {
-	/*border: none;*/
 	border-right: 1px solid gray;
 }
 
@@ -154,7 +159,7 @@ input {
 .title-header {
 	background-color: white;
 	padding: 25px 25px 10px 25px;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid gray;
 }
 
 .title-container {
