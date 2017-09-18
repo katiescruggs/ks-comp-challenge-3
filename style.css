@@ -236,17 +236,17 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 40px;
-
-	/*margin: 20px;*/
 }
 
 .graph-img {
-	width: 400px;
+	width: 500px;
 }
 
 .graph-btn {
+	border: 1px solid gray;
 	display: block;
-	margin-left: 150px;
+	font-size: 0.9rem;
+	margin: 15px 0 10px 150px;
 }
 
 /*Main Section*/
