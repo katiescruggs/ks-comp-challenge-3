@@ -265,14 +265,16 @@ a {
 table {
 	background-color: white;
 	border-collapse: collapse;
-	margin: 45px;
-	width: 600px;
+	font-size: 0.9rem;
+	margin: 60px 45px;
+	width: 700px;
 }
 
 th {
 	background-color: #6F7E95;
 	color: white;
-	padding: 15px 30px;
+	font-weight: normal;
+	padding: 1px 30px;
 }
 
 th > p {
