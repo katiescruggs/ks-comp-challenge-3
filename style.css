@@ -26,10 +26,9 @@ ul {
 nav {
 	background-color: #354052;
 	color: #A4AFC1;
-	/*float: left;*/
+	font-size: 0.9rem;
 	height: 200%;
-	width: 162px;
-
+	width: 200px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -44,7 +43,7 @@ nav {
 .nav-main,
 .nav-admin,
 .nav-categories {
-	padding: 10px;
+	padding: 10px 20px;
 	border-bottom: 2px solid black;
 }
 
@@ -56,11 +55,15 @@ ul {
 li,
 h4,
 p {
+	margin: 20px 0;
+}
+
+.profile-name {
 	margin: 10px 0;
 }
 
 nav .fa {
-	width: 25px;
+	width: 35px;
 }
 
 .nav-top {
@@ -68,9 +71,10 @@ nav .fa {
 }
 
 .profile-pic {
-	margin-top: 10px;
+	margin-top: 20px;
 	border-radius: 50%;
-	width: 60px;
+	width: 90px;
+	height: 90px;
 }
 
 .nav-categories {
@@ -97,7 +101,7 @@ nav .fa {
 .main-container {
 	position: absolute;
 	top: 0;
-	left: 162px;
+	left: 200px;
 	right: 0;
 }
 
@@ -109,28 +113,33 @@ nav .fa {
 
 input {
 	font-family: fontawesome;
-	height: 30px;
+	height: 60px;
 	padding: 10px;
 	position: absolute;
 	top: 0;
-	left: 50px;
+	left: 80px;
 	right: 200px;
 	width: 700px;
 	border: none;
+}
+
+::placeholder {
+	font-family: sans-serif;
+	font-family: FontAwesome;
+	font-size: 1.5rem;
 }
 
 .search button,
 .right-buttons button {
 	background-color: white;
 	border: none;
-	height: 50px;
+	height: 80px;
 	margin: 0;
 	padding: 10px;
-	width: 50px;
+	width: 80px;
 }
 
 .search .left-search {
-	/*border: none;*/
 	border-right: 1px solid gray;
 }
 
@@ -150,7 +159,7 @@ input {
 .title-header {
 	background-color: white;
 	padding: 25px 25px 10px 25px;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid gray;
 }
 
 .title-container {
@@ -163,27 +172,40 @@ input {
 }
 
 h1 {
-	font-size: 1.75em;
+	font-weight: normal;
 	margin: 0 0 10px 0;
 }
 
 .location {
-	margin: 0;
+	font-size: 0.9rem;
+	margin: 0 0 10px 0;
 }
 
 .fa-circle {
 	color: green;
 }
 
+.header-nav-list li {
+	font-size: 0.9rem;
+}
+
 .header-btns {
 	align-self: center;
 	border-radius: 10px;
 	border-collapse: separate;
+	font-size: 0.9rem;
 	margin-left: 15px;
 }
 
 .header-btns button {
 	margin: 5px;
+	height: 45px;
+	width: 45px;
+	border: 1px solid gray;
+}
+
+.open {
+	width: 120px !important;
 }
 
 a {
@@ -214,17 +236,17 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 40px;
-
-	/*margin: 20px;*/
 }
 
 .graph-img {
-	width: 400px;
+	width: 500px;
 }
 
 .graph-btn {
+	border: 1px solid gray;
 	display: block;
-	margin-left: 150px;
+	font-size: 0.9rem;
+	margin: 15px 0 10px 150px;
 }
 
 /*Main Section*/
@@ -243,14 +265,16 @@ a {
 table {
 	background-color: white;
 	border-collapse: collapse;
-	margin: 45px;
-	width: 600px;
+	font-size: 0.9rem;
+	margin: 60px 45px;
+	width: 685px;
 }
 
 th {
 	background-color: #6F7E95;
 	color: white;
-	padding: 15px 30px;
+	font-weight: normal;
+	padding: 1px 30px;
 }
 
 th > p {
@@ -276,13 +300,14 @@ td {
 }
 
 aside {
-	margin: 45px 45px 0 0;
-	width: 400px;
+	margin: 60px 45px 0 0;
+	width: 285px;
 }
 
 .aside-btn {
 	border: none;
 	color: white;
+	font-size: 0.9rem;
 	margin: 0 0 15px 0;
 	width: 100%;
 	height: 50px;
