@@ -26,10 +26,9 @@ ul {
 nav {
 	background-color: #354052;
 	color: #A4AFC1;
-	/*float: left;*/
+	font-size: 0.9rem;
 	height: 200%;
-	width: 162px;
-
+	width: 200px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -56,6 +55,10 @@ ul {
 li,
 h4,
 p {
+	margin: 20px 0;
+}
+
+.profile-name {
 	margin: 10px 0;
 }
 
@@ -68,9 +71,10 @@ nav .fa {
 }
 
 .profile-pic {
-	margin-top: 10px;
+	margin-top: 20px;
 	border-radius: 50%;
-	width: 60px;
+	width: 90px;
+	height: 90px;
 }
 
 .nav-categories {
@@ -97,7 +101,7 @@ nav .fa {
 .main-container {
 	position: absolute;
 	top: 0;
-	left: 162px;
+	left: 200px;
 	right: 0;
 }
 
