@@ -11,6 +11,10 @@ body {
 	width: 100%;
 }
 
+.accent {
+	color: magenta;
+}
+
 ul {
 	list-style-type: none;
 }
@@ -27,7 +31,7 @@ nav {
 	background-color: #354052;
 	color: #A4AFC1;
 	font-size: 0.9rem;
-	height: 200%;
+	height: 220%;
 	width: 200px;
 	position: absolute;
 	top: 0;
@@ -36,7 +40,6 @@ nav {
 
 .menu {
 	display: none !important;
-	/*visibility: hidden;*/
 }
 
 .nav-top,
@@ -148,16 +151,14 @@ input {
 }
 
 .right-buttons button {
-	float: right;
 	border-left: 2px solid #E5E6E8;
+	position: relative;
 }
 
 .right-buttons {
-	position: absolute;
-	top: 0;
-	right: 0;
-}
+	float: right;
 
+}
 
 /*Title Header Section*/
 .title-header {
@@ -174,7 +175,7 @@ input {
 }
 
 .title-div {
-	margin: 20px;
+	margin: 20px 0 10px 20px;
 }
 
 h1 {
@@ -183,12 +184,15 @@ h1 {
 }
 
 .location {
-	/*font-size: 0.9rem;*/
 	margin: 0 0 10px 0;
 }
 
 .fa-circle {
 	color: green;
+}
+
+.header-nav-list {
+	margin-top: 10px;
 }
 
 .header-nav-list li {
@@ -228,6 +232,7 @@ a {
 .more-li {
 	display: none;
 	margin: 10px 20px;
+	font-weight: bold;
 
 }
 
@@ -275,9 +280,9 @@ table {
 	background-color: white;
 	border-collapse: collapse;
 	color: #53565A;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	margin: 60px 45px;
-	width: 685px;
+	width: 650px;
 }
 
 th {
@@ -296,7 +301,8 @@ td:first-child {
 }
 
 .job-description {
-	width: 170px;
+	font-size: 1rem;
+	width: 130px;
 	text-align: left;
 }
 
@@ -404,12 +410,16 @@ h2 .fa {
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
+	nav {
+		height: 360%;
+	}
+
 	.title-container {
 		flex-wrap: wrap;
 	}
 
-	.more-li {
+/*	.more-li {
 		display: inline-block;
 		font-weight: bold;
 	}
@@ -419,15 +429,38 @@ h2 .fa {
 	.activity,
 	.interviews {
 		display: none;
+	}*/
+
+	table {
+		width: 600px;
+	}
+
+	aside {
+		margin: 10px 45px;
+		width: 600px;
+	}
+
+	.email-text {
+		width: 97%;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.header-li {
+		width: 100px;
+	}
+
+	nav {
+		height: 380%;
 	}
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 985px) {
 	nav {
 		display: flex;
 		justify-content:space-between;
-		height: 55px;
+		height: 80px;
 		width: 100%;
 	}
 
@@ -436,14 +469,14 @@ h2 .fa {
 	}
 
 	.profile-pic {
-		margin: 0;
-		width: 30px;
+		margin: 8.5px 0;
+		width: 40px;
+		height: 40px;
 	}
 
-	p {
+	.profile-name {
 		display: inline-flex;
-		margin-left: 10px;
-
+		margin: 22.5px 15px;
 	}
 
 	.nav-main, 
@@ -451,17 +484,112 @@ h2 .fa {
 	.nav-categories {
 		border: none;
 		display: inline-flex;
+		margin: 10px;
+		padding: 0;
 	}
 
-	ul {
+	.nav-ul {
 		display: none;
 	}
 
 	.main-container {
-		top: 55px;
+		top: 80px;
 		left: 0;
 		width: 100%;
 	}
+
+	.title-header {
+		padding: 15px 5px;
+	}
+
+	.header-btns {
+		margin-right: 15px;
+	}
+
+	table, aside {
+		/*width: 550px;*/
+		width: 80%;
+	}
+
+	input {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.nav-main, 
+	.nav-admin, 
+	.nav-categories {
+		display: none;
+	}
+	
+	.menu {
+		display: inline-flex !important;
+		padding: 13px;
+	}
+
+	aside {
+		width: 85%;
+	}
+
+	table {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.job-description {
+		width: auto;
+	}
+
+	input {
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 96.5%;
+		border-top: 2px solid #E5E6E8;
+	}
+
+	.search {
+		align-content: center;
+		display: flex;
+		height: 162px;
+	}
+
+	.search .left-search {
+		position: static;
+		border: none;
+		border-left: 2px solid #E5E6E8;
+	}
+
+	.right-buttons{
+		float: none;
+		border-right: 2px solid #E5E6E8;
+	}
+
+	.top-line-search {
+		justify-content: center;
+		display: flex;
+		margin: 0 auto;
+	}
+
+	.notifications,
+	.broadcast,
+	.activity,
+	.interviews,
+	.job-board {
+		display: none;
+	}
+
+	.header-li {
+		margin-right: 0;
+		width: auto;
+	}
+
+	.more-li {
+		display: inline-block;
+	}
+
 }
 
 @media screen and (max-width: 400px) {
@@ -474,6 +602,23 @@ h2 .fa {
 	.menu {
 		display: inline-flex !important;
 		padding: 13px;
+	}
+
+	.open {
+		width: 80px !important;
+	}
+
+	.search .left-search {
+		width: 70px;
+	}
+	.search button {
+		width: 70px;
+	}
+
+	th,
+	td {
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 
 }
