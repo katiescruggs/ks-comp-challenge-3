@@ -62,6 +62,11 @@ p {
 	padding: 15px;
 }
 
+.nav-ul li,
+.nav-h4 {
+	border-left: 2px solid #354052;
+}
+
 .profile-name {
 	font-size: 1rem;
 	margin: 15px 0;
@@ -158,13 +163,12 @@ input {
 
 .right-buttons {
 	float: right;
-
 }
 
 /*Title Header Section*/
 .title-header {
 	background-color: white;
-	padding: 25px 25px 10px 25px;
+	padding: 25px 25px 0px 25px;
 	border-bottom: 2px solid #CBCED1;
 
 	color: #53565A;
@@ -227,13 +231,17 @@ a {
 
 .header-li {	
 	display: inline-block;
-	margin: 10px 20px;
+	padding: 10px 0px 20px 0px;
+	margin: 0 20px;
+	border-bottom: 3px solid white;
 }
 
 .more-li {
 	display: none;
-	margin: 10px 20px;
+	padding: 10px 0px 20px 0px;
+	margin: 0 20px;
 	font-weight: bold;
+	border-bottom: 3px solid white;
 
 }
 
@@ -317,7 +325,6 @@ td:first-child {
 td {
 	border-bottom: 1px solid #CBCED1;
 	padding: 27.5px;
-
 }
 
 aside {
@@ -419,6 +426,7 @@ h2 .fa {
 .nav-ul li:hover {
 	color: white;
 	background-color: #28303E;
+	border-left: 2px solid magenta;
 }
 
 .search button:hover {
@@ -434,13 +442,13 @@ h2 .fa {
 .header-li:hover {
 	color: black;
 	font-weight: bold;
+	border-bottom: 3px solid magenta;
 }
 
 .more-li:hover {
 	color: black;
+	border-bottom: 3px solid magenta;
 }
-
-
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1300px) {
@@ -524,7 +532,7 @@ h2 .fa {
 	}
 
 	.title-header {
-		padding: 15px 5px;
+		padding: 15px 5px 0px 5px;
 	}
 
 	.header-btns {
