@@ -363,6 +363,11 @@ aside {
 	margin-bottom: 12px;
 }
 
+.aside-sections {
+	display: flex;
+	flex-direction: column;
+}
+
 h2 {
 	font-size: 1.3rem;
 	font-weight: normal;
