@@ -11,6 +11,10 @@ body {
 	width: 100%;
 }
 
+.accent {
+	color: magenta;
+}
+
 ul {
 	list-style-type: none;
 }
@@ -228,6 +232,7 @@ a {
 .more-li {
 	display: none;
 	margin: 10px 20px;
+	font-weight: bold;
 
 }
 
@@ -413,7 +418,7 @@ h2 .fa {
 		flex-wrap: wrap;
 	}
 
-	.more-li {
+/*	.more-li {
 		display: inline-block;
 		font-weight: bold;
 	}
@@ -423,7 +428,7 @@ h2 .fa {
 	.activity,
 	.interviews {
 		display: none;
-	}
+	}*/
 
 	table {
 		width: 600px;
@@ -437,6 +442,13 @@ h2 .fa {
 	.email-text {
 		width: 97%;
 	}
+}
+
+@media screen and (max-width: 1080px) {
+	.header-li {
+		width: 100px;
+	}
+
 }
 
 @media screen and (max-width: 985px) {
@@ -479,6 +491,14 @@ h2 .fa {
 		top: 80px;
 		left: 0;
 		width: 100%;
+	}
+
+	.title-header {
+		padding: 15px 5px;
+	}
+
+	.header-btns {
+		margin-right: 15px;
 	}
 
 	table, aside {
@@ -536,6 +556,24 @@ h2 .fa {
 		display: flex;
 		margin: 0 auto;
 	}
+
+	.notifications,
+	.broadcast,
+	.activity,
+	.interviews,
+	.job-board {
+		display: none;
+	}
+
+	.header-li {
+		margin-right: 0;
+		width: auto;
+	}
+
+	.more-li {
+		display: inline-block;
+	}
+
 }
 
 @media screen and (max-width: 400px) {
@@ -548,6 +586,17 @@ h2 .fa {
 	.menu {
 		display: inline-flex !important;
 		padding: 13px;
+	}
+
+	.open {
+		width: 80px !important;
+	}
+
+	.search .left-search {
+		width: 70px;
+	}
+	.search button {
+		width: 70px;
 	}
 
 }
