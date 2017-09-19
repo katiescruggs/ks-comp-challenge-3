@@ -12,7 +12,7 @@ body {
 }
 
 .accent {
-	color: magenta;
+	color: #13A4FB;
 }
 
 ul {
@@ -46,7 +46,7 @@ nav {
 .nav-main,
 .nav-admin,
 .nav-categories {
-	padding: 10px 20px;
+	padding: 10px 0;
 	border-bottom: 2px solid #28303E;
 }
 
@@ -55,10 +55,11 @@ ul {
 	padding: 0;
 }
 
-li,
+.nav-ul li,
 h4,
 p {
-	margin: 25px 0;
+	margin: 0;
+	padding: 15px;
 }
 
 .profile-name {
@@ -409,6 +410,33 @@ h2 .fa {
 	width: 90%;
 }
 
+/*HOVER STATES*/
+.nav-ul li:hover {
+	color: white;
+	background-color: #28303E;
+}
+
+.search button:hover {
+	background-color: #13A4FB;
+	color: white;
+	cursor: pointer;
+}
+
+.search button:hover .accent {
+	color: white;
+}
+
+.header-li:hover {
+	color: black;
+	font-weight: bold;
+}
+
+.more-li:hover {
+	color: black;
+}
+
+
+
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1300px) {
 	nav {
@@ -418,18 +446,6 @@ h2 .fa {
 	.title-container {
 		flex-wrap: wrap;
 	}
-
-/*	.more-li {
-		display: inline-block;
-		font-weight: bold;
-	}
-
-	.broadcast,
-	.notifications,
-	.activity,
-	.interviews {
-		display: none;
-	}*/
 
 	table {
 		width: 600px;
@@ -457,6 +473,10 @@ h2 .fa {
 }
 
 @media screen and (max-width: 985px) {
+	.header-li {
+		width: 80px;
+	}
+
 	nav {
 		display: flex;
 		justify-content:space-between;
@@ -507,7 +527,6 @@ h2 .fa {
 	}
 
 	table, aside {
-		/*width: 550px;*/
 		width: 80%;
 	}
 
@@ -620,7 +639,6 @@ h2 .fa {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-
 }
 
 
