@@ -198,6 +198,8 @@ h1 {
 
 .header-nav-list {
 	margin-top: 10px;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 .header-nav-list li {
@@ -232,7 +234,7 @@ a {
 .header-li {	
 	display: inline-block;
 	padding: 10px 0px 20px 0px;
-	margin: 0 20px;
+	margin: 0 15px;
 	border-bottom: 3px solid white;
 }
 
@@ -475,10 +477,6 @@ h2 .fa {
 }
 
 @media screen and (max-width: 1080px) {
-	.header-li {
-		width: 100px;
-	}
-
 	nav {
 		height: 380%;
 	}
@@ -486,10 +484,6 @@ h2 .fa {
 }
 
 @media screen and (max-width: 985px) {
-	.header-li {
-		width: 80px;
-	}
-
 	nav {
 		display: flex;
 		justify-content:space-between;
@@ -545,6 +539,17 @@ h2 .fa {
 
 	input {
 		width: 400px;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.notifications,
+	.broadcast {
+		display: none;
+	}
+
+	.more-li {
+		display: inline-block;
 	}
 }
 
@@ -605,11 +610,8 @@ h2 .fa {
 		margin: 0 auto;
 	}
 
-	.notifications,
-	.broadcast,
 	.activity,
-	.interviews,
-	.job-board {
+	.interviews {
 		display: none;
 	}
 
@@ -617,14 +619,13 @@ h2 .fa {
 		margin-right: 0;
 		width: auto;
 	}
-
-	.more-li {
-		display: inline-block;
-	}
-
 }
 
 @media screen and (max-width: 400px) {
+	.job-board {
+		display: none;
+	}
+
 	.nav-main, 
 	.nav-admin, 
 	.nav-categories {
