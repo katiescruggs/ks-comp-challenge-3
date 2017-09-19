@@ -391,6 +391,11 @@ h2 .fa {
 	left: 0;
 	right: 70px;
 	bottom: 20px;
+
+
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .copy-btn {
