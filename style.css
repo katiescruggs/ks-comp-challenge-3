@@ -190,6 +190,7 @@ h1 {
 
 .location {
 	margin: 0 0 10px 0;
+	padding-left: 0;
 }
 
 .fa-circle {
@@ -492,7 +493,18 @@ h2 .fa {
 	}
 
 	.nav-top {
+		align-content: center;
 		display: flex;
+		margin-left: 20px;
+	}
+
+	.nav-flex-container {
+		display: flex;
+	}
+
+	.nav-h4 {
+		align-self: center;
+		padding: 0;
 	}
 
 	.profile-pic {
@@ -503,7 +515,10 @@ h2 .fa {
 
 	.profile-name {
 		display: inline-flex;
-		margin: 22.5px 15px;
+		align-self: center;
+		margin: 0;
+		padding: 0;
+		padding-left: 10px;
 	}
 
 	.nav-main, 
@@ -585,6 +600,7 @@ h2 .fa {
 		right: 0;
 		width: 96.5%;
 		border-top: 2px solid #E5E6E8;
+		padding-left: 25px;
 	}
 
 	.search {
