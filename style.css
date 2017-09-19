@@ -280,7 +280,7 @@ table {
 	background-color: white;
 	border-collapse: collapse;
 	color: #53565A;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	margin: 60px 45px;
 	width: 650px;
 }
@@ -301,7 +301,8 @@ td:first-child {
 }
 
 .job-description {
-	width: 170px;
+	font-size: 1rem;
+	width: 130px;
 	text-align: left;
 }
 
@@ -449,6 +450,10 @@ h2 .fa {
 		width: 100px;
 	}
 
+	nav {
+		height: 380%;
+	}
+
 }
 
 @media screen and (max-width: 985px) {
@@ -502,7 +507,8 @@ h2 .fa {
 	}
 
 	table, aside {
-		width: 550px;
+		/*width: 550px;*/
+		width: 80%;
 	}
 
 	input {
@@ -510,7 +516,7 @@ h2 .fa {
 	}
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 650px) {
 	.nav-main, 
 	.nav-admin, 
 	.nav-categories {
@@ -522,8 +528,18 @@ h2 .fa {
 		padding: 13px;
 	}
 
-	table, aside {
-		width: 400px;
+	aside {
+		width: 85%;
+	}
+
+	table {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.job-description {
+		width: auto;
 	}
 
 	input {
@@ -597,6 +613,12 @@ h2 .fa {
 	}
 	.search button {
 		width: 70px;
+	}
+
+	th,
+	td {
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 
 }
