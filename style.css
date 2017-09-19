@@ -328,6 +328,7 @@ td:first-child {
 td {
 	border-bottom: 1px solid #CBCED1;
 	padding: 27.5px;
+	line-height: 1.4rem;
 }
 
 aside {
@@ -388,12 +389,16 @@ h2 .fa {
 .button-widget,
 .upload-resumes {
 	color: #53565A;
-	height: 150px;
-	position: relative;
 }
 
 .copy-p {
 	margin: 10px 0;
+	padding: 3px 0;
+}
+
+.copy-div {
+	align-items: center;
+	display: flex;
 }
 
 .copy-text {
@@ -401,13 +406,7 @@ h2 .fa {
 	display: inline-block;
 	padding: 15px;
 	margin: 10px 0;
-
-	position: absolute;
-	left: 0;
-	right: 70px;
-	bottom: 20px;
-
-
+	width: 100%;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -420,10 +419,6 @@ h2 .fa {
 	height: 44px;
 	margin-right: 0;
 	width: 70px;
-
-	position: absolute;
-	right: 0;
-	bottom: 30px;
 }
 
 .email-text {
@@ -434,7 +429,7 @@ h2 .fa {
 .nav-ul li:hover {
 	color: white;
 	background-color: #28303E;
-	border-left: 2px solid magenta;
+	border-left: 2px solid #13A4FB;
 }
 
 .search button:hover {
@@ -450,12 +445,11 @@ h2 .fa {
 .header-li:hover {
 	color: black;
 	font-weight: bold;
-	border-bottom: 3px solid magenta;
+	border-bottom: 3px solid #13A4FB;
 }
 
 .more-li:hover {
-	color: black;
-	border-bottom: 3px solid magenta;
+	border-bottom: 3px solid #13A4FB;
 }
 
 /*MEDIA QUERIES*/
