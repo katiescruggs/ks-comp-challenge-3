@@ -9,102 +9,103 @@
 	</head>
 	<body>
 
-		<nav>
+		<nav role="navigation">
 			<section class="nav-top">
 				<img class="profile-pic" src="katie-scruggs.jpg" alt="Profile Picture of Katie Scruggs">
 				<p class="profile-name">Katie Scruggs<i class="fa fa-caret-down" aria-hidden="true"></i></p>
 			</section>
 			<div class="nav-flex-container">
-				<i class="fa fa-bars fa-2x menu" aria-hidden="true"></i>
+				<i class="fa fa-bars fa-2x menu" aria-label="Dropdown Menu"></i>
 				<section class="nav-main">
 					<h4 class="nav-h4">Main</h4>
-						<ul class="nav-ul">
-							<li><i class="fa fa-home" aria-hidden="true"></i>HOME</li>
-							<li><i class="fa fa-suitcase" aria-hidden="true"></i>JOBS</li>
-							<li><i class="fa fa-file-text" aria-hidden="true"></i>RESUMES</li>
-							<li><i class="fa fa-list-alt" aria-hidden="true"></i>TASKS</li>
-							<li><i class="fa fa-calendar" aria-hidden="true"></i>CALENDAR</li>
+						<ul class="nav-ul" role="list">
+							<li role="listitem"><i class="fa fa-home" aria-hidden="true"></i>HOME</li>
+							<li role="listitem"><i class="fa fa-suitcase" aria-hidden="true"></i>JOBS</li>
+							<li role="listitem"><i class="fa fa-file-text" aria-hidden="true"></i>RESUMES</li>
+							<li role="listitem"><i class="fa fa-list-alt" aria-hidden="true"></i>TASKS</li>
+							<li role="listitem"><i class="fa fa-calendar" aria-hidden="true"></i>CALENDAR</li>
 						</ul>
 				</section>
 				<section class="nav-admin">
 					<h4 class="nav-h4">Admin</h4>
-					<ul class="nav-ul">
-						<li><i class="fa fa-users" aria-hidden="true"></i>USERS</li>
-						<li><i class="fa fa-map-marker" aria-hidden="true"></i>LOCATIONS</li>
-						<li><i class="fa fa-line-chart" aria-hidden="true"></i>WORKFLOWS</li>
-						<li><i class="fa fa-clipboard" aria-hidden="true"></i>JOB BOARDS</li>
-						<li><i class="fa fa-share-alt" aria-hidden="true"></i>SOCIAL</li>
+					<ul class="nav-ul" role="list">
+						<li role="listitem"><i class="fa fa-users" aria-hidden="true"></i>USERS</li>
+						<li role="listitem"><i class="fa fa-map-marker" aria-hidden="true"></i>LOCATIONS</li>
+						<li role="listitem"><i class="fa fa-line-chart" aria-hidden="true"></i>WORKFLOWS</li>
+						<li role="listitem"><i class="fa fa-clipboard" aria-hidden="true"></i>JOB BOARDS</li>
+						<li role="listitem"><i class="fa fa-share-alt" aria-hidden="true"></i>SOCIAL</li>
 					</ul>
 				</section>
 				<section class="nav-categories">
 					<h4 class="nav-h4">Categories</h4>
-					<ul class="nav-ul">
-						<li><i class="fa fa-check-square yellow" aria-hidden="true"></i>Administrative</li>
-						<li><i class="fa fa-square blue" aria-hidden="true"></i>Design</li>
-						<li><i class="fa fa-square red" aria-hidden="true"></i>Executive</li>
-						<li><i class="fa fa-square green" aria-hidden="true"></i>Human Resources</li>
+					<ul class="nav-ul" role="list">
+						<li role="listitem checkbox"><i class="fa fa-check-square yellow" aria-hidden="true"></i>Administrative</li>
+						<li role="listitem checkbox"><i class="fa fa-square blue" aria-hidden="true"></i>Design</li>
+						<li role="listitem checkbox"><i class="fa fa-square red" aria-hidden="true"></i>Executive</li>
+						<li role="listitem checkbox"><i class="fa fa-square green" aria-hidden="true"></i>Human Resources</li>
 					</ul>
 				</section>
 			</div>
 		</nav>
 
-		<main class="main-container">
+		<main class="main-container" role="main">
 
-			<section class="search">
+			<section class="search" role="search">
 				<div class="top-line-search">
-					<button class="left-search">
+					<button class="left-search" role="button"  aria-label="Menu">
 						<i class="fa fa-caret-left fa-lg accent" aria-hidden="true"></i>
 						<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
 					</button>
 					<input class="search-input" type="text" placeholder="&#XF002; Search for a job, task or resume">
 					
 					<div class="right-buttons">
-						<button>
+						<button role="button" aria-label="Add User">
 							<i class="fa fa-user-plus fa-lg" aria-hidden="true"></i>
-						</button><button>
+						</button><button role="button" aria-label="Calendar">
 							<i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
-						</button><button>
+						</button><button role="button" aria-label="More">
 							<i class="fa fa-th fa-lg" aria-hidden="true"></i>
 						</button>
 					</div>
 				</div>
 			</section>
 
-			<header class="title-header">
+			<header class="title-header" role="banner">
 				<div class="title-container">
 					<div class="title-div">
 						<h1>Customer Service Representive</h1>
 						<p class="location">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<i class="fa fa-map-marker" aria-hidden="true" aria-label="Map Marker"></i>
 							San Francisco, CA 
-							<span class="dash">-</span>
-							<a href="">Preview this post</a>
+							<span class="dash" aria-label="Dash">-</span>
+							<a href="https://google.com" title="Google">Preview this post</a>
 						</p>
 					</div>
 					<div class="header-btns">
-						<button class="open oval"><i class="fa fa-circle" aria-hidden="true"></i>OPEN</button>
-						<button class="oval"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
-						<button class="oval"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-						<button class="oval"><i class="fa fa-building" aria-hidden="true"></i></button>
+						<button class="open oval" role="button"><i class="fa fa-circle" aria-hidden="true"></i>OPEN</button>
+						<button class="oval" role="button" aria-label="bookmark"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
+						<button class="oval" role="button" aria-label="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+						<button class="oval" role="button" aria-label="delete"><i class="fa fa-building" aria-hidden="true"></i></button>
 					</div>
 				</div>
-				<ul class="header-nav-list">
-					<li class="summary header-li">SUMMARY</li>
-					<li class="applicants header-li">APPLICANTS</li>
-					<li class="job-board header-li">JOB BOARD</li>
-					<li class="interviews header-li">INTERVIEWS</li>
-					<li class="activity header-li">ACTIVITY</li>
-					<li class="broadcast header-li">BROADCAST</li>
-					<li class="notifications header-li">NOTIFICATIONS</li>
-					<li class="more-li accent">MORE</li>
+				<ul class="header-nav-list" role="list">
+					<li class="summary header-li" role="listitem">SUMMARY</li>
+					<li class="applicants header-li" role="listitem">APPLICANTS</li>
+					<li class="job-board header-li" role="listitem">JOB BOARD</li>
+					<li class="interviews header-li" role="listitem">INTERVIEWS</li>
+					<li class="activity header-li" role="listitem">ACTIVITY</li>
+					<li class="broadcast header-li" role="listitem">BROADCAST</li>
+					<li class="notifications header-li" role="listitem">NOTIFICATIONS</li>
+					<li class="more-li accent" role="listitem">MORE</li>
 				</ul>
 			</header>
 
-			<section class="graphs">
-				<div class="circle-graph">
+			<section class="graphs" aria-label="Graph Section">
+				<div class="circle-graph" aria-label="Circle Graph">
 					<div class="actual-circles">
-						<div class="circle circle-1">
+						<div class="circle circle-1" aria-label="Circle Graph One">
 							<svg width="100%" height="100%" viewbox="0 0 100 100">
+								<title>Donut Graph Displaying 3,156 Applicants</title>
 	    					<circle cx="50" cy="50" r="40" fill="#EDF2F6"/>
 	    					<circle cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#D8E5EB"/>
 	   						<circle cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#4ABEC6" stroke-dasharray="271.2" stroke-dashoffset="50.3"/>
@@ -114,8 +115,9 @@
 	    					</text>
 							</svg>
 						</div>
-						<div class="circle circle-2">
+						<div class="circle circle-2" aria-label="Circle Graph Two">
 							<svg width="100%" height="100%" viewbox="0 0 100 100">
+								<title>Donut Graph Displaying 1,546 Interviews</title>
 	    					<circle cx="50" cy="50" r="40" fill="#EDF2F6"/>
 	    					<circle cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#D8E5EB"/>
 	   						<circle cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#15A4F6" stroke-dasharray="160.2" stroke-dashoffset="50.3"/>
@@ -125,8 +127,9 @@
 	    					</text>
 							</svg>
 						</div>
-						<div class="circle circle-3">
+						<div class="circle circle-3" aria-label="Circle Graph Three">
 							<svg width="100%" height="100%" viewbox="0 0 100 100">
+								<title>Donut Graph Displaying 912 Forwards</title>
 	    					<circle cx="50" cy="50" r="40" fill="#EDF2F6"/>
 	    					<circle cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#D8E5EB"/>
 	   						<circle cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#AF68B5" stroke-dasharray="150" stroke-dashoffset="50.3"/>
@@ -137,20 +140,20 @@
 							</svg>
 						</div>
 					</div>
-					<button class="oval graph-btn">TOTALS - Out of 5,231 views</button>					
+					<button class="oval graph-btn" role="button">TOTALS - Out of 5,231 views</button>					
 				</div>
-				<div class="bar-graph">
-					<img class="graph-img" src="bar-graph.png" alt="Bar Graph of Data">
-					<button class="oval graph-btn app-btn">APPLICANTS/DAY</button>					
+				<div class="bar-graph" aria-label="Bar Graph">
+					<img class="graph-img" src="bar-graph.png" alt="Bar Graph Displaying Applicants Per Day">
+					<button class="oval graph-btn app-btn" role="button">APPLICANTS/DAY</button>					
 				</div>
 			</section>
 
-			<main class="main-section">
+			<main class="main-section" role="main">
 				<table>
 					<tr>
 						<th class="job-description">JOB DESCRIPTION</th>
 						<th><p>
-									<button class='edit'>
+									<button class='edit' role="button" aria-labelledby="Edit">
 										<i class="fa fa-pencil" aria-hidden="true"></i>
 											EDIT
 									</button>
@@ -186,17 +189,17 @@
 					</tr>
 					<tr>
 						<td class="td-first">APPROVED SALARY</td>
-						<td>$58,000</td>
+						<td><strong>$58,000</strong></td>
 					</tr>
 				</table>
 				<aside>
-					<button class="aside-btn facebook">
+					<button class="aside-btn facebook" role="button" aria-labelledby="Facebook">
 						<i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
 						Post to Facebook</button>
-					<button class="aside-btn twitter">
+					<button class="aside-btn twitter" role="button" aria-labelledby="Twitter">
 						<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
 						Tweet this Job</button>
-					<button class="aside-btn linkedin">
+					<button class="aside-btn linkedin" role="button" aria-labelledby="LinkedIn">
 						<i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
 						Post to LinkedIn</button>
 				<div class="aside-sections">
@@ -205,7 +208,7 @@
 						<p class="copy-p">Lorem ipsum dolor sit armet, consectur adipis cing etc. integer mollis neque eget vestibgend.</p>
 						<div class="copy-div">
 							<p class="copy-text">https://loremipsum.dol/sit amet</p>
-							<button class="copy-btn">Copy</button>
+							<button class="copy-btn" role="button">Copy</button>
 						</div>
 					</section>
 					<section class="button-widget">
@@ -213,7 +216,7 @@
 						<p class="copy-p">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
 						<div class="copy-div">
 							<p class="copy-text">script type="text/javascript" script</p>
-							<button class="copy-btn">Copy</button>
+							<button class="copy-btn" role="button">Copy</button>
 						</div>
 					</section>
 					<section class="upload-resumes">
