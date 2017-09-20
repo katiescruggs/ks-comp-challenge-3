@@ -534,6 +534,7 @@ h2 .fa {
 
 	.nav-flex-container {
 		display: flex;
+		padding-right: 20px;
 	}
 
 	.nav-h4 {
