@@ -2,8 +2,8 @@
 html,
 body {
 	background-color: #EDF2F6;
-	 box-sizing:border-box;
-    -moz-box-sizing:border-box;
+	box-sizing:border-box;
+  -moz-box-sizing:border-box;
 	font-family: sans-serif;
 	font-size: 14px;
 	height: 100%;
@@ -32,10 +32,10 @@ nav {
 	color: #A4AFC1;
 	font-size: 0.9rem;
 	height: 220%;
-	width: 200px;
+	left: 0;
 	position: absolute;
 	top: 0;
-	left: 0;
+	width: 200px;
 }
 
 .menu {
@@ -46,8 +46,8 @@ nav {
 .nav-main,
 .nav-admin,
 .nav-categories {
-	padding: 10px 0;
 	border-bottom: 2px solid #28303E;
+	padding: 10px 0;
 }
 
 ul {
@@ -81,10 +81,10 @@ nav .fa {
 }
 
 .profile-pic {
-	margin-top: 20px;
 	border-radius: 50%;
-	width: 90px;
 	height: 90px;
+	margin-top: 20px;
+	width: 90px;
 }
 
 .nav-categories {
@@ -122,17 +122,17 @@ nav .fa {
 }
 
 input {
+	border: none;
 	color: #53565A;
 	font-family: sans-serif;
 	font-size: 1.3rem;
 	height: 60px;
+	left: 80px;
 	padding: 10px;
 	position: absolute;
-	top: 0;
-	left: 80px;
 	right: 200px;
+	top: 0;
 	width: 700px;
-	border: none;
 }
 
 ::placeholder {
@@ -145,11 +145,11 @@ input {
 .right-buttons button {
 	background-color: white;
 	border: none;
+	color: #848990;
 	height: 80px;
 	margin: 0;
 	padding: 10px;
 	width: 80px;
-	color: #848990;
 }
 
 .search .left-search {
@@ -168,10 +168,9 @@ input {
 /*Title Header Section*/
 .title-header {
 	background-color: white;
-	padding: 25px 25px 0px 25px;
 	border-bottom: 2px solid #CBCED1;
-
 	color: #53565A;
+	padding: 25px 25px 0px 25px;
 }
 
 .title-container {
@@ -198,9 +197,9 @@ h1 {
 }
 
 .header-nav-list {
-	margin-top: 10px;
 	display: flex;
 	flex-wrap: nowrap;
+	margin-top: 10px;
 }
 
 .header-nav-list li {
@@ -209,19 +208,18 @@ h1 {
 
 .header-btns {
 	align-self: center;
-	border-radius: 10px;
 	border-collapse: separate;
+	border-radius: 10px;
 	font-size: 0.9rem;
 	margin-left: 15px;
 }
 
 .header-btns button {
-	margin: 5px;
-	height: 45px;
-	width: 45px;
 	border: 2px solid #CBCED1;
-
 	color: #53565A;
+	height: 45px;
+	margin: 5px;
+	width: 45px;
 }
 
 .open {
@@ -233,19 +231,18 @@ a {
 }
 
 .header-li {	
-	display: inline-block;
-	padding: 10px 0px 20px 0px;
-	margin: 0 15px;
 	border-bottom: 3px solid white;
+	display: inline-block;
+	margin: 0 15px;
+	padding: 10px 0px 20px 0px;
 }
 
 .more-li {
-	display: none;
-	padding: 10px 0px 20px 0px;
-	margin: 0 20px;
-	font-weight: bold;
 	border-bottom: 3px solid white;
-
+	display: none;
+	font-weight: bold;
+	margin: 0 20px;
+	padding: 10px 0px 20px 0px;
 }
 
 .dash {
@@ -255,11 +252,11 @@ a {
 /*Graphs Section*/
 .graphs {
 	align-content: center;
-	justify-content: center;
 	background-color: #EDF2F6;
 	border-bottom: 2px solid #CBCED1;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	padding: 20px;
 }
 
@@ -268,14 +265,12 @@ a {
 }
 
 .graph-btn {
+	align-self: center;
 	border: 2px solid #CBCED1;
 	color: #53565A;
 	display: block;
 	font-size: 0.9rem;
 	width: 200px;
-
-	align-self: center;
-	/*margin: 15px 0 10px 150px;*/
 }
 
 .app-btn {
@@ -284,9 +279,9 @@ a {
 
 .circle-graph,
 .bar-graph {
+	align-content: center;
 	display: flex;
 	flex-direction: column;
-	align-content: center;
 	justify-content: center;
 	margin: 10px 15px;
 }
@@ -303,11 +298,10 @@ a {
 
 /*Main Section*/
 .main-section {
-	justify-content: center;
 	background-color: #EDF2F6;
 	display: flex;
 	flex-wrap: wrap;
-
+	justify-content: center;
 }
 
 .inline-p {
@@ -341,8 +335,8 @@ td:first-child {
 
 .job-description {
 	font-size: 1rem;
-	width: 130px;
 	text-align: left;
+	width: 130px;
 }
 
 .edit {
@@ -354,8 +348,20 @@ td:first-child {
 
 td {
 	border-bottom: 1px solid #CBCED1;
-	padding: 27.5px;
 	line-height: 1.4rem;
+	padding: 27.5px;
+}
+
+.flex-td {
+	align-content: center;
+	display: flex;
+}
+
+.table-img {
+	border-radius: 50%;
+	height: 30px;
+	margin-right: 10px;
+	width: 30px;
 }
 
 aside {
@@ -366,15 +372,15 @@ aside {
 .aside-btn {
 	border: none;
 	color: white;
-	margin: 0 0 20px 0;
-	width: 100%;
 	height: 50px;
+	margin: 0 0 20px 0;
 	position: relative;
+	width: 100%;
 }
 
 .aside-btn > i {
-	position: absolute;
 	left: 30px;	
+	position: absolute;
 }
 
 .facebook {
@@ -431,12 +437,12 @@ h2 .fa {
 .copy-text {
 	background-color: white;
 	display: inline-block;
-	padding: 15px;
 	margin: 10px 0;
-	width: 100%;
 	overflow: hidden;
-	white-space: nowrap;
+	padding: 15px;
 	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
 }
 
 .copy-btn {
@@ -454,9 +460,9 @@ h2 .fa {
 
 /*HOVER STATES*/
 .nav-ul li:hover {
-	color: white;
 	background-color: #28303E;
 	border-left: 2px solid #13A4FB;
+	color: white;
 }
 
 .search button:hover {
@@ -506,14 +512,13 @@ h2 .fa {
 	nav {
 		height: 380%;
 	}
-
 }
 
 @media screen and (max-width: 985px) {
 	nav {
 		display: flex;
-		justify-content:space-between;
 		height: 80px;
+		justify-content:space-between;
 		width: 100%;
 	}
 
@@ -533,14 +538,14 @@ h2 .fa {
 	}
 
 	.profile-pic {
+		height: 40px;
 		margin: 8.5px 0;
 		width: 40px;
-		height: 40px;
 	}
 
 	.profile-name {
-		display: inline-flex;
 		align-self: center;
+		display: inline-flex;
 		margin: 0;
 		padding: 0;
 		padding-left: 10px;
@@ -560,8 +565,8 @@ h2 .fa {
 	}
 
 	.main-container {
-		top: 80px;
 		left: 0;
+		top: 80px;
 		width: 100%;
 	}
 
@@ -620,13 +625,13 @@ h2 .fa {
 	}
 
 	input {
-		top: 80px;
+		border-top: 2px solid #E5E6E8;
 		left: 0;
 		right: 0;
-		width: 95%;
-		border-top: 2px solid #E5E6E8;
+		top: 80px;
 		padding-left: 25px;
 		padding-right: 0;
+		width: 95%;
 	}
 
 	.search {
@@ -636,19 +641,19 @@ h2 .fa {
 	}
 
 	.search .left-search {
-		position: static;
 		border: none;
 		border-left: 2px solid #E5E6E8;
+		position: static;
 	}
 
 	.right-buttons{
-		float: none;
 		border-right: 2px solid #E5E6E8;
+		float: none;
 	}
 
 	.top-line-search {
-		justify-content: center;
 		display: flex;
+		justify-content: center;
 		margin: 0 auto;
 	}
 
@@ -668,8 +673,8 @@ h2 .fa {
 
 	.circle-graph,
 	.bar-graph {
-	margin: 10px 0;
-}
+		margin: 10px 0;
+	}
 
 	.graph-img {
 		width: 380px;
@@ -682,6 +687,10 @@ h2 .fa {
 
 	.circle {
 		height: 120px;
+	}
+
+	.email-text {
+		width: 92%;
 	}
 }
 
@@ -730,13 +739,6 @@ h2 .fa {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-
-
 }
-
-
-
-
-
 
 
