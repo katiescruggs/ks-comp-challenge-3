@@ -260,7 +260,7 @@ a {
 	border-bottom: 2px solid #CBCED1;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 40px;
+	padding: 20px;
 }
 
 .graph-img {
@@ -272,7 +272,33 @@ a {
 	color: #53565A;
 	display: block;
 	font-size: 0.9rem;
-	margin: 15px 0 10px 150px;
+	width: 200px;
+
+	align-self: center;
+	/*margin: 15px 0 10px 150px;*/
+}
+
+.app-btn {
+	width: 150px;
+}
+
+.circle-graph,
+.bar-graph {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	margin: 10px 15px;
+}
+
+.actual-circles {
+	display: flex;
+	height: 200px;
+	width: 600px;
+}
+
+.circle {
+	height: 180px;
 }
 
 /*Main Section*/
@@ -310,6 +336,7 @@ th > p {
 
 td:first-child {
 	font-size: 0.9rem;
+	vertical-align: top;
 }
 
 .job-description {
@@ -444,7 +471,6 @@ h2 .fa {
 
 .header-li:hover {
 	color: black;
-	font-weight: bold;
 	border-bottom: 3px solid #13A4FB;
 }
 
@@ -597,9 +623,10 @@ h2 .fa {
 		top: 80px;
 		left: 0;
 		right: 0;
-		width: 96.5%;
+		width: 95%;
 		border-top: 2px solid #E5E6E8;
 		padding-left: 25px;
+		padding-right: 0;
 	}
 
 	.search {
@@ -634,6 +661,28 @@ h2 .fa {
 		margin-right: 0;
 		width: auto;
 	}
+
+	.graphs {
+		padding: 20px 0;
+	}
+
+	.circle-graph,
+	.bar-graph {
+	margin: 10px 0;
+}
+
+	.graph-img {
+		width: 380px;
+	}
+
+	.actual-circles {
+		height: 125px;
+		width: 380px;
+	}
+
+	.circle {
+		height: 120px;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -663,11 +712,26 @@ h2 .fa {
 		width: 70px;
 	}
 
+	.graph-img {
+		width: 300px;
+	}
+
+	.actual-circles {
+		height: 105px;
+		width: 310px;
+	}
+
+	.circle {
+		height: 100px;
+	}
+
 	th,
 	td {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+
+
 }
 
 
